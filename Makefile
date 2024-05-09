@@ -20,6 +20,7 @@ all:
 	@echo   make example   - Generate example/SAMPLE.md and example/SAMPLE.pdf
 
 install:
+	@tlmgr install adjustbox babel-german background bidi collectbox csquotes everypage filehook footmisc footnotebackref framed fvextra letltxmacro ly1 mdframed mweights needspace pagecolor sourcecodepro sourcesanspro titling ucharcat ulem unicode-math upquote xecjk xurl zref
 ifeq ($(OS),Windows_NT)
 	@echo "Fetching the latest Eisvogel release URL..."
 	@powershell -Command "$$LATEST_RELEASE_URL = $$(Invoke-RestMethod -Uri 'https://api.github.com/repos/Wandmalfarbe/pandoc-latex-template/releases/latest' | Select-Object -ExpandProperty assets | Where-Object { $$_.name -like '*eisvogel*.zip' } | Select-Object -First 1 -ExpandProperty browser_download_url); \
