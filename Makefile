@@ -38,7 +38,7 @@ ifeq ($(OS),Windows_NT)
 	if (!(Test-Path -Path $$filtersPath)) { \
 		New-Item -ItemType Directory -Path $$filtersPath; \
 	} \
-	Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/leoli0605/diagram/main/_extensions/diagram/diagram.lua' -OutFile \"$$(Join-Path $$filtersPath 'diagram.lua')\";"
+	Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/pandoc-ext/diagram/main/_extensions/diagram/diagram.lua' -OutFile \"$$(Join-Path $$filtersPath 'diagram.lua')\";"
 else
 	# Unix-like commands (macOS and Linux)
 	@echo "Fetching the latest Eisvogel release URL..."
@@ -55,7 +55,7 @@ else
 	rm Eisvogel.zip
 	@echo "Fetching the latest diagram.lua release URL..."
 	mkdir -p ~/.pandoc/filters
-	curl -L https://raw.githubusercontent.com/leoli0605/diagram/main/_extensions/diagram/diagram.lua -o $$HOME/.pandoc/filters/diagram.lua
+	curl -L https://raw.githubusercontent.com/pandoc-ext/diagram/main/_extensions/diagram/diagram.lua -o $$HOME/.pandoc/filters/diagram.lua
 ifeq ($(shell uname),Darwin)
 	# https://github.com/oh-my-home/homebrew-fonts
 	@echo "Installing Source Han Serif fonts..."
