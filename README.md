@@ -1,7 +1,6 @@
 # This is a Pandoc Markdown Sample
 
-This is a sample of a markdown file that can be converted to a PDF using
-Pandoc.
+This is a sample of a markdown file that can be converted to a PDF using Pandoc.
 
 ## Installation
 
@@ -35,4 +34,5 @@ npm install -g @mermaid-js/mermaid-cli
 
 ## Links
 
-- [pandoc-latex-template](https://github.com/Wandmalfarbe/pandoc-latex-template)
+- https://github.com/Wandmalfarbe/pandoc-latex-template
+- https://github.com/pandoc-ext/diagram
