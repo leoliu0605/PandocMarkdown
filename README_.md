@@ -1,6 +1,6 @@
 ---
 title: README
-author: "LeoLi"
+author: "Leo"
 colorlinks: true
 ---
 
@@ -40,4 +40,5 @@ npm install -g @mermaid-js/mermaid-cli
 
 ## Links
 
-- [pandoc-latex-template](https://github.com/Wandmalfarbe/pandoc-latex-template)
+- https://github.com/Wandmalfarbe/pandoc-latex-template
+- https://github.com/pandoc-ext/diagram
